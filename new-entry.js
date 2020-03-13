@@ -7,19 +7,19 @@ export default function NewEntry(props) {
         <h3>New entry</h3>
       <ul>
         <li>
-            <label for='name'>Name</label>
+            <label htmlFor='name'>Name</label>
           <input id='name' type="text"></input>
         </li>
         <li>
-            <label for='age'>Age</label>
+            <label htmlFor='age'>Age</label>
           <input id='age' type="text"></input>
         </li>
         <li>
-            <label for='phone'>Phone</label>
+            <label htmlFor='phone'>Phone</label>
           <input id='phone' type="text"></input>
         </li>
         <li>
-            <label for='email'>Email</label>
+            <label htmlFor='email'>Email</label>
           <input id='email' type="text"></input>
         </li>
       </ul>
