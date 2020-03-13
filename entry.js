@@ -8,15 +8,15 @@ if (props.person.isEditing) {
       <ul>
         <li>
             <label htmlFor='age'>Age</label>
-          <input id='age' type="text" placeholder={props.person.age}></input>
+          <input id='age' type="text" defaultValue={props.person.age}></input>
         </li>
         <li>
             <label htmlFor='phone'>Phone</label>
-          <input id='phone' type="text" placeholder={props.person.phone}></input>
+          <input id='phone' type="text" defaultValue={props.person.phone}></input>
         </li>
         <li>
             <label htmlFor='email'>Email</label>
-          <input id='email' type="text" placeholder={props.person.email}></input>
+          <input id='email' type="text" defaultValue={props.person.email}></input>
         </li>
       </ul>
       <button>Confirm</button>

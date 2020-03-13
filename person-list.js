@@ -69,20 +69,22 @@ export default function PersonList() {
 
   function updateEntry(event, id) {
     event.preventDefault();
-    setPersons.map(person => {
-      if ((id = person.id)) {
-        return {
-          id: person.id,
-          name: event.target.name.value,
-          phone: event.target.phone.value,
-          age: event.target.age.value,
-          email: event.target.email.value,
-          isEditing: false
-        };
-      } else {
-        return person;
-      }
-    });
+    setPersons(
+      personsData.map(person => {
+        if (id === person.id) {
+          return {
+            id: person.id,
+            name: person.name,
+            phone: event.target.phone.value,
+            age: event.target.age.value,
+            email: event.target.email.value,
+            isEditing: false
+          };
+        } else {
+          return person;
+        }
+      })
+    );
   }
 
   const list = personsData.map(person => (
